@@ -7,7 +7,7 @@ metadata:
     app: frontend
     app.kubernetes.io/part-of: nittfest
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: frontend
