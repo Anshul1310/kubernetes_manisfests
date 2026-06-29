@@ -6,7 +6,6 @@ metadata:
   labels:
     app.kubernetes.io/part-of: nittfest
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
     nginx.ingress.kubernetes.io/proxy-connect-timeout: "30"
     nginx.ingress.kubernetes.io/proxy-read-timeout: "30"
     nginx.ingress.kubernetes.io/proxy-send-timeout: "30"
@@ -17,8 +16,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-    - host: nittfest.local
-      http:
+    - http:
         paths:
           - path: /api/users
             pathType: Prefix
