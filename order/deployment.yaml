@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: order-service
-          image: anshul8394/order-service:35
+          image: anshul8394/order-service:36
           ports:
             - containerPort: 8082
               protocol: TCP
