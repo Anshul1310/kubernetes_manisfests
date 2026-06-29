@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: nittfest
+  labels:
+    app.kubernetes.io/part-of: nittfest
+data:
+  USER_SERVICE_URL: "http://user-service.nittfest.svc.cluster.local:8081"
+  VITE_USER_SERVICE_URL: "http://nittfest.local"
+  VITE_ORDER_SERVICE_URL: "http://nittfest.local"
