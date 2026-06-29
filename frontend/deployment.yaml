@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: anshul1310/frontend:latest
+          image: anshul8394/frontend:latest
           ports:
             - containerPort: 3000
               protocol: TCP
